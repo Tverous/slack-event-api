@@ -37,7 +37,7 @@ func main() {
 	router := gin.Default()
 
 	// Slack Events API endpoint
-	router.POST("/slack/events", func(c *gin.Context) {
+	router.POST("/", func(c *gin.Context) {
 		var event SlackEvent
 
 		// Parse incoming JSON request
